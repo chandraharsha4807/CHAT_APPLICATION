@@ -1,0 +1,27 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  height: 100svh;
+}
+
+.login-wrapper {
+  min-height: 95svh;
+  display: grid;
+  grid-template-columns: 4.5fr 4.5fr;
+  column-gap: 30px;
+}
+
+.login-bg{
+  background-color: #141414;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.chat-page-wrapper{
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  height: 95svh;
+  background-color: #f0f0f0;
+}

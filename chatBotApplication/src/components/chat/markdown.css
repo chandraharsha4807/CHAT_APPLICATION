@@ -1,0 +1,14 @@
+.toastui-editor-contents table th {
+  background-color: #f6f6f6 !important;
+  font-weight: 500 !important;
+  color: #555555 !important;
+}
+.toastui-editor-contents ol {
+  list-style-type: auto !important;
+}
+.toastui-editor-contents ol > li:before {
+  color: #aaa0 !important;
+}
+.toastui-editor-contents {
+  font-size: 16px !important;
+}

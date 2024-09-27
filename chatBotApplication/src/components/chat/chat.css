@@ -1,0 +1,111 @@
+.chat-wrapper {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 0 5px 5px 0;
+  display: grid;
+  grid-template-rows: 0.5fr 9fr 0.5fr;
+}
+
+.chat-history {
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  overflow-y: scroll;
+  background: black;
+}
+
+.chat-history-container {
+  display: grid;
+  row-gap: 10px;
+}
+.chat-history-list {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+  &:hover {
+    border: 2px solid blueviolet;
+    border-color: blueviolet;
+  }
+}
+.chat-data-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 75svh;
+  overflow-y: auto;
+  padding: 10px;
+  align-items: flex-start;
+}
+.sender-message-container {
+  display: flex;
+  max-width: 60%;
+  margin-bottom: 20px;
+  .chat-card:hover {
+    border: 1px solid red;
+  }
+}
+.sender-message-container .edit-icon {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the icon when hovering on the container */
+.sender-message-container:hover .edit-icon {
+  opacity: 1;
+}
+
+.receiver-message-container {
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  max-width: 75%;
+  .chat-card:hover {
+    border: 1px solid green;
+  }
+}
+
+.chat-card {
+  background: white;
+  padding: 20px 15px 15px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.chat-tag-answer {
+  position: absolute;
+  top: -10px; /* Adjust to position the tag above the chat card */
+  left: 10px;
+  background-color: #a6cda6; /* Change the color to your preference */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.chat-tag-question {
+  position: absolute;
+  top: -10px; /* Adjust to position the tag above the chat card */
+  left: 10px;
+  background-color: #d88787; /* Change the color to your preference */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.streaming-chat-card {
+  align-self: flex-end;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.chat-input-field-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  .css-1dtoofl-MuiPaper-root {
+    border-radius: 10px !important;
+  }
+  .css-4j6jqn-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 10px !important;
+  }
+}
