@@ -27,7 +27,7 @@ const MdViewer = ({ modelValue }: {modelValue: string}) => {
   return <div ref={editorRef} />;
 };
 
-MdViewer.defaultProps = {
+MdViewer.defaultParams = {
   modelValue: "" as any,
 };
 

@@ -7,7 +7,7 @@ import ProtectedRoute from "./routes/authRoute";
 import PageNotFound from "./screens/PageNotFound";
 
 const LoginPageLazy = lazy(() => import("./screens/LoginPage"));
-const ChatPageLazy = lazy(() => import("./screens/chatPage"));
+const ChatPageLazy = lazy(() => import("./screens/ChatPage"));
 
 const App = () => {
   return (
