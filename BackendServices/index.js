@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-require('dotenv').config();
+require("dotenv").config();
 const app = express();
 const cors = require("cors");
 
@@ -18,7 +18,7 @@ app.use(
 app.use(cors());
 
 setRouter.userRoutes(app);
-console.log(chat)
+console.log(chat);
 chat.chatRoutes(app);
 
 app.get("/events", (req, res) => {
@@ -29,7 +29,7 @@ app.get("/events", (req, res) => {
   });
 
   const loginText =
-    "This line sets up the middleware for parsing incoming URL-encoded request bodies. This line sets up the middleware for parsing incoming URL-encoded request bodies.";
+    "What is LLM ? LLM stands for Large Language Model, which is a type of artificial intelligence (AI) that uses deep learning to process, understand, and generate human language";
   const words = loginText.split(" ");
   let index = 0;
 
